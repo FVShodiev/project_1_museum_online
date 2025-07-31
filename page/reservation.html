@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="icon" href="../img/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    <title>МузейОнлайн</title>
+</head>
+
+<section>
+    <div class="container">
+        <nav class="navbar navbar-dark bg-dark mt-2 py-4 p-4 rounded">
+            <div class="container-fluid">
+                <a class="navbar-brand fs-3 fw-semibold" href="../index.html">МузейОнлайн</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+                    aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav me-auto mb-2 fw-semibold">
+                        <li class="nav-item">
+                            <a class="nav-link" href="events.html">Мероприятия</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="eksponats.html">Экспонаты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="3D eksponats.html">3D экспонаты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="info.html">Лекции</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reservation.html">Записаться</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " href="#" data-bs-toggle="dropdown"
+                                aria-expanded="false">Профиль</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark p-2" href="reg.html">Регистрация</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link text-dark p-2" href="authorization.html">Вход</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</section>
+
+<sectio>
+    <div class="container mt-5 w-50" style="min-height:88vh">
+        <h2 class="text-center text-dark">Запись в музей</h2>
+        <p class="text-danger fw-semibold pt-4">
+            Ежедневно с 11:00 до 18:00
+        </p>
+        <form action="#" method="post">
+            <div class="form-group mb-3">
+                <label for="date">Дата посещения</label>
+                <input type="date" class="form-control" id="date" name="day" required>
+            </div>
+            <div class="form-group mb-3">
+                <label for="time">Время посещения</label>
+                <input type="time" class="form-control" id="time" name="time" required>
+            </div>
+            <div class="form-group mb-3">
+                <label for="comments">Комментарии</label>
+                <textarea class="form-control" id="comments" rows="3"
+                    placeholder="Введите ваши комментарии (по желанию)" name="message"></textarea>
+            </div>
+            <div class="d-flex justify-content-end">
+                <button type="submit" class="btn btn-outline-dark fw-semibold">Записаться</button>
+            </div>
+        </form>
+    </div>
+    </section>
+
+    <section>
+        <div class="container mt-5 mb-3">
+            <div class="card shadow-sm p-5 py-3 bg-dark">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3 text-white">
+                    <div class="col">
+                        <h5 class="text">Контакты</h5>
+                        <p class="text">+7 123 456 78 99<br>
+                            ул. Куйбышева, 39
+                        </p>
+                    </div>
+                    <div class="col">
+                        <h5 class="text">Режим работы</h5>
+                        <p class="text">
+                            Ежедневно: <br>
+                            с 11:00 до 18:00
+                        </p>
+                    </div>
+                    <div class="col">
+                        <h5 class="text">Ошибки?</h5>
+                        Напишите нам
+                        <a class="nav-link text-danger" aria-current="page" href="help.html">
+                            Перейти
+                        </a>
+                    </div>
+                    <div class="col">
+                        <h5 class="text">Соц. сети</h5>
+                        Наш тг канал
+                        <a class="nav-link text-danger" href="https://t.me/museumonlinechannel">
+                            Перейти
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"></script>
+    <script src="../assets/script/script.js"></script>
+    <script src="../assets/script/spline-viewer.js"></script>
+
+</html>
